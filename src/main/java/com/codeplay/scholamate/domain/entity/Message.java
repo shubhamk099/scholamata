@@ -1,6 +1,6 @@
 package com.codeplay.scholamate.domain.entity;
 
-import com.codeplay.scholamate.constant.Status;
+import com.codeplay.scholamate.constant.StatusType;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -33,5 +33,5 @@ public class Message extends BaseEntity {
     private String message;
 
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private StatusType statusType;
 }

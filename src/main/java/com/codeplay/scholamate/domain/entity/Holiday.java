@@ -2,7 +2,7 @@ package com.codeplay.scholamate.domain.entity;
 
 import java.time.LocalDate;
 
-import com.codeplay.scholamate.constant.Type;
+import com.codeplay.scholamate.constant.HolidayType;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -18,7 +18,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "holiday")
-public class Holiday {
+public class Holiday extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,5 +29,5 @@ public class Holiday {
     private String reason;
 
     @Enumerated(EnumType.STRING)
-    private Type type;
+    private HolidayType holidayType;
 }

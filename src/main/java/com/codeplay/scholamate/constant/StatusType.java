@@ -1,5 +1,5 @@
 package com.codeplay.scholamate.constant;
 
-public enum Status {
+public enum StatusType {
     OPEN, CLOSED
 }

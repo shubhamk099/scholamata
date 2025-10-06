@@ -25,4 +25,6 @@ public class Person extends BaseEntity{
     private String email;
 
     private String password;
+
+    Role role;
 }

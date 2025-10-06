@@ -1,5 +1,5 @@
 package com.codeplay.scholamate.constant;
 
-public enum Type {
-    FESTIVAL, NATIONAL
+public enum RoleType {
+    STUDENT, ADMIN
 }
